@@ -1,43 +1,58 @@
-#SpringBoot + Restful + Docker
+ Spring-restfull-docker
 
-####Necessário instalar:
+## 🛠️ IDEA utilizada
 
-Docker
-https://docs.docker.com/docker-for-windows/install/
+* [IntelliJ IDEA Community](https://www.jetbrains.com/pt-br/idea/download/#section=windows)
 
-git:
-https://git-scm.com/downloads
+### 📋 Pré-requisitos
 
-Java:
-https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html
+* [Docker](https://docs.docker.com/docker-for-windows/install/)
+* [git](https://git-scm.com/downloads)
+* [Java](https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html)
 
-####IDEA utilizada:
+## ⚙️ Executando
 
-IntelliJ IDEA Community
-https://www.jetbrains.com/pt-br/idea/download/#section=windows
+Clonar o repositório:
 
-####Clonar o repositório:
+```
 $ git clone https://github.com/fulldevelopments/springboot-rest-docker.git
+```
 
 Colocar usuario do https://hub.docker.com/ no arquivo dockerfile.
 
-####Criar imagem docker:
+Criar imagem docker:
+
+```
 $ docker build -t="procedimento-java" .
+```
 
 ####Iniciar o container:
+
+```
 $ docker run -p 8080:8080 -it --rm procedimento-java
-
+```
+```
 $ curl localhost:8080
+```
 
-####Parar o container:
+Parar o container:
+
+```
 $ docker stop `docker container ls | grep "procedimento-java:*" | awk '{ print $1 }'`
+```
 
-####Iniciar com docker-compose:
+Iniciar com docker-compose:
 criar e iniciar o container 
 
+```
 $ docker-compose up -d 
+```
 
+```
 $ curl localhost:8080
+```
 
-####Parar o container:
+Parar o container:
+```
 $ docker-compose down
+```
