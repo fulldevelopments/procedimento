@@ -15,7 +15,7 @@
 Clonar o repositório:
 
 ```
-$ git clone https://github.com/fulldevelopments/springboot-rest-docker.git
+$ git clone https://github.com/fulldevelopments/procedimento.git
 ```
 
 Colocar usuario do https://hub.docker.com/ no arquivo dockerfile.
