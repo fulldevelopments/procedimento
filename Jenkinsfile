@@ -13,7 +13,7 @@ node {
     
     stage('Clone Repo') { // for display purposes
       // Get some code from a GitHub repository
-      git 'https://github.com/fulldevelopments/springboot-rest-docker.git'
+      git 'https://github.com/fulldevelopments/procedimento.git'
       // Get the Maven tool.
       // ** NOTE: This 'maven-3.6.1' Maven tool must be configured
       // **       in the global configuration.           
